@@ -1,0 +1,75 @@
+/* BODY: Sets the page background color and text style */
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    background-color: deeppink;
+    color: whitesmoke;
+}
+
+/* HEADER: Styles the main heading */
+#heading {
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px auto;
+}
+
+/* BUTTON: Makes the coin button circular */
+#coinButton {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 20px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+#coinButton img {
+    width: 100%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+/* COUNTERS: Styles the win/loss counters */
+.counter {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    height: 50px; /* Set a consistent height */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* Position the win counter on the left */
+#winCount {
+    left: 20px;
+}
+
+/* Position the loss counter on the right */
+#lossCount {
+    right: 20px;
+}
+
+/* GAME OUTPUT: Styles the result message */
+#gameOutput {
+    margin-top: 20px;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+}

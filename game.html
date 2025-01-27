@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip a Coin Game</title>
+    <!-- Link to the CSS file -->
+    <link href="main.css" rel="stylesheet">
+    <!-- Link to the JavaScript file -->
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <!-- Main heading for the webpage -->
+    <header>
+        <h1 id="heading">Flip A Coin</h1>
+        <p>Click the coin to flip it!</p>
+    </header>
+
+    <!-- Display the win counter on the left -->
+    <div id="winCount" class="counter">Wins: 0</div>
+    <!-- Display the loss counter on the right -->
+    <div id="lossCount" class="counter">Losses: 0</div>
+
+    <!-- The coin button (displays the coin image) -->
+    <button id="coinButton" onclick="flipCoin()">
+        <img id="coinImage" src="FlipCoin.png" alt="Coin">
+    </button>
+
+    <!-- Display the result of the coin flip -->
+    <div id="gameOutput"></div>
+</body>
+</html>
