@@ -4,13 +4,13 @@ let losses = 0;
 
 // Function to flip the coin
 function flipCoin() {
-    console.log("flipCoin function triggered"); // Log for debugging
+    console.log("flipCoin function triggered"); // Debugging log
 
     // Generate a random number between 0 and 1
     const randomValue = Math.random();
     // Use the random number to decide Heads (1) or Tails (0)
-    const result = randomValue < 0.6 ? 1 : 0; // 60% chance for Heads, 40% for Tails
-    console.log("Random value:", randomValue, "Result:", result); // Log for debugging
+    const result = randomValue < 0.4 ? 1 : 0; // 40% Heads, 60% Tails
+    console.log("Random value:", randomValue, "Result:", result); // Debugging log
 
     // Get the coin image element
     const coinImage = document.getElementById("coinImage");
